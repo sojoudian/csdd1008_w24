@@ -9,4 +9,5 @@ func main() {
 	digit = 10
 	text = "Hello"
 	fmt.Printf("%s %d\n", text, digit)
+	fmt.Println("This sentence is printed using Println")
 }
