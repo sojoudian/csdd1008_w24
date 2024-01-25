@@ -7,6 +7,11 @@ func main() {
 	fmt.Println(sum(10, 20))
 	echo()
 	functionName()
+	secondEcho("This is from secondEcho function")
+	thirdEcho("This is from thirdEcho function")
+	//fmt.Println(fourthEcho("This is from fourthEcho function"))
+	a := fourthEcho("This is from fourthEcho function")
+	fmt.Println(a)
 }
 
 func echo() {
@@ -24,4 +29,17 @@ func printName(name string) {
 
 func functionName() {
 
+}
+
+func secondEcho(s string) {
+	fmt.Println(s)
+}
+
+func thirdEcho(s string) string {
+	fmt.Println(s)
+	return s
+}
+
+func fourthEcho(s string) string {
+	return s
 }
