@@ -40,7 +40,7 @@ func torontoTimeHandler(w http.ResponseWriter, r *http.Request)  {
     http.Error(w, "Error fetchin Toronto time", http.StatusInternalServerError)
     return
   }
-  fmt.Fprintf(w, "Toronto time is %s", torontoTime)
+  //fmt.Fprintf(w, "Toronto time is %s", torontoTime)
   resp := map[string]string{"current_Time_Toronto": torontoTime}
   w.Header().Set("Content-Type", "application/json")
   json.NewEncoder(w).Encode(resp)
